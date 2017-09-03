@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2017-09-03 13:06:11
+  date: 2017-09-03
+  genre: one
+  teacher: one
+  location: one
+
+two:
+  time: 2017-09-03 13:06:11
+  date: 2017-09-03
+  genre: two
+  teacher: two
+  location: two
