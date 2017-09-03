@@ -1,12 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-User.destroy_all
+# User.destroy_all
 # Post.destroy_all
 # Teacher.destroy_all
 # Lesson.destroy_all
@@ -36,7 +28,8 @@ l1 = Location.create!(name: "Shoreditch studio", address: "Holy Trinity, Church 
 
 l2 = Location.create!(name: "Southwark Studio", address: "St. Peter & The Guardian Angels Church, Church Hall, 72 Paradise Street, SE16 4QD", lat:51.4998, long:0.0586 )
 
+# Post.create!(body: "", lesson_id: "", teacher_id: "", user_id: "" )
 
-Lesson.create!(genre:g3, teacher:t1, location:l1)
-Lesson.create!(genre:g2, teacher:t3, location:l2)
-Lesson.create!(genre:g1, teacher:t2, location:l1)
+Lesson.create!(genre:g3, teacher:t1, location:l1, user_ids:[u1.id, u2.id])
+Lesson.create!(genre:g2, teacher:t3, location:l2, user_ids:[u1.id, u3.id])
+Lesson.create!(genre:g1, teacher:t2, location:l1, user_ids:[u1.id, u2.id, u3.id])

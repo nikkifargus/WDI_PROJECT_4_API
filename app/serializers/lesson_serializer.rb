@@ -6,4 +6,6 @@ class LessonSerializer < ActiveModel::Serializer
 
   has_many :posts
 
+  has_many :users
+
 end
