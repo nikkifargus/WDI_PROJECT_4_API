@@ -6,16 +6,16 @@
 # Genre.destroy_all
 
 
-u1 = User.create!(firstname:"Rachel", lastname:"Smith", description:"Lets get fit!", image:"http://www.nab.org/documents/newsroom/photos/052114_Smith_Rachel_hi.jpg", admin:"admin", email:"rachel.smith@ga.co")
-u2 = User.create!(firstname:"Jane", lastname:"Doe", description:"I like to run", image:"http://photo.elcinema.com.s3.amazonaws.com/uploads/_320x_707150111ebc6dfe8773bffab87c1db84e7dcbdfce7d0290af56570f3a709595.jpg", admin:"client", email:"jane.doe@ga.co")
-u3 = User.create!(firstname: "Joe", lastname: "Bloggs", description: "I like sport", image: "http://www.helenokey.com/uploads/5/6/8/7/5687390/8943989_orig.jpg", admin: "client", email: "joe.bloggs@ga.co")
+u1 = User.create!(firstname:"Rachel", lastname:"Smith", description:"Lets get fit!", image:"http://www.nab.org/documents/newsroom/photos/052114_Smith_Rachel_hi.jpg", admin:"admin", email:"rachel.smith@ga.co", password:"password", password_confirmation:"password")
+u2 = User.create!(firstname:"Jane", lastname:"Doe", description:"I like to run", image:"http://photo.elcinema.com.s3.amazonaws.com/uploads/_320x_707150111ebc6dfe8773bffab87c1db84e7dcbdfce7d0290af56570f3a709595.jpg", admin:"client", email:"jane.doe@ga.co", password:"password", password_confirmation:"password")
+u3 = User.create!(firstname: "Joe", lastname: "Bloggs", description: "I like sport", image: "http://www.helenokey.com/uploads/5/6/8/7/5687390/8943989_orig.jpg", admin: "client", email: "joe.bloggs@ga.co", password:"password", password_confirmation:"password")
 
 t1 = Teacher.create!(name: "Mike Stone", description: "I've been a fitness coach for 6 years and love to get my clients motivated. My aim is to help people to achieve their goals, by sharing my knowledge of exercise to my students so they understand all about the health benefits of doing regular exercise and have a whole lot of fun at the same time.", image: "https://www.thetrainingroom.com/TheTrainingRoom/media/Testimonials/health-and-fitness-personal-trainer-david-bosley.jpg?ext=.jpg")
 
 t2 = Teacher.create!(name: "Jessica Trip", description: "I have a particular interest in obesity and weight management and understand the challenges that people are faced with when trying to lose weight. I work with both groups of people and individuals and believe that long-term successful weight loss requires long-term behaviour changes both in diet and lifestyle.", image: "http://www.yourpersonaltraininguk.co.uk/sites/default/files/Susanna%20Karpati%20Sized%203%20PS.jpg")
 
 
-t3 = Teacher.create!(name: "Petra Ori", description: "I have 4 years experience teaching and attending Jumping classes, as well as being a qualified and experienced aerobic and acrobatic instructor. I incorporate all my different experience into the fitness classes that I teach to make them more fun, more interesting and more challenging!", image: "https://pbs.twimg.com/profile_images/528175874525249537/hBJUecM4.jpeg" )
+t3 = Teacher.create!(name: "Petra Ori", description: "I have 4 years experience teaching and attending Jumping classes, as well as being a qualified and experienced aerobic and acrobatic instructor. I incorporate all my different experience into the fitness classes that I teach to make them more fun, more interesting and more challenging!", image: "http://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/jessi-kneeland-700x700_0.jpg" )
 
 
 g1 = Genre.create!(name: "Jumping Fitness", description:"Jumping Fitness is a dynamic fitness training system, conducted on specially developed trampolines. The basis of Jumping is a combination off ast and slow jumps, variations of traditional aerobic steps, dynamic sprints and power sports elements.", image: "https://i.ytimg.com/vi/eNSLkC_M7kQ/maxresdefault.jpg")
